@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shutter effect</title>
+    <link rel="stylesheet" href="form.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="navbar">
+        <img src="../test/shutter/logo.png" class="logo" alt="" />
+        <img src="../test/shutter/menu.png" class="menu" id="menuIcon" alt="" />
+      </div>
+      <div class="menu" id="menuIcon">
+        <button>click moi</button>
+      </div>
+      <div class="row">
+        <div id="left-col">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+          </ul>
+        </div>
+        <div id="right-col">
+          <div>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+          <img src="../test/shutter/close.png" id="closeIcon" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var menuIcon = document.getElementById("menuIcon");
+      var closeIcon = document.getElementById("closeIcon");
+      var leftCol = document.getElementById("left-col");
+      var rightCol = document.getElementById("right-col");
+
+      menuIcon.onclick = function () {
+        rightCol.style.transform = "translateX(0)";
+      };
+      closeIcon.onclick = function () {
+        leftCol.style.transform = "translateX(-100%)";
+        rightCol.style.transform = "translateX(100%)";
+      };
+    </script>
+  </body>
+</html>
