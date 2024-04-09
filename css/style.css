@@ -60,6 +60,10 @@ a {
   max-width: 600px;
 }
 
+.home-description {
+  display: flex;
+}
+
 .home-content h1 {
   font-size: 3rem;
   font-weight: 700;
