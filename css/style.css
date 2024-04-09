@@ -232,7 +232,6 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2; /* Assure que cet élément est au-dessus */
 }
 .cube img {
   transition: 0.6s;
@@ -296,4 +295,12 @@ a {
   margin-top: 100px;
 
   z-index: 2;
+}
+
+.bg-display {
+  display: block;
+}
+
+.bg {
+  display: none;
 }

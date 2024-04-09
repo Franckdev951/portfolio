@@ -12,13 +12,13 @@ btnStack.onclick = function () {
     } else {    
         btnStack.textContent = "Mes stacks";
     }
-    if
-    (background.style.display === "none"){
-        background.style.display = "block";}
-        else{
-            background.style.display = "none";
-        }
-        
+    // if
+    // (background.style. display === "none"){
+    //     background.style.display = "block";}
+    //     else{
+    //         background.style.display = "none";
+    //     }
+    background.classList.toggle('bg-display')
      
     };
 
